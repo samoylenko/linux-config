@@ -12,10 +12,10 @@ floating_modifier $mod normal
 bindsym --to-code {
     $mod+Return exec $term
     $mod+d exec $menu
-    
+
     $mod+Shift+q kill
-    $mod+Shift+c reload 
-    
+    $mod+Shift+c reload
+
     $mod+Left focus left
     $mod+Down focus down
     $mod+Up focus up
@@ -53,14 +53,14 @@ bindsym --to-code {
     $mod+s layout stacking
     $mod+w layout tabbed
     $mod+e layout toggle split
-    
+
     $mod+r mode "resize"
     $mod+f fullscreen
-     
+
     $mod+Shift+space floating toggle
     $mod+space focus mode_toggle
     $mod+a focus parent
-    
+
     $mod+Shift+minus move scratchpad
     $mod+minus scratchpad show
 
@@ -77,7 +77,7 @@ bindsym --to-code {
     $mod+l exec swaylock
     $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
 }
-   
+
 mode "resize" {
     bindsym Left resize shrink width 10px
     bindsym Down resize grow height 10px
@@ -91,7 +91,7 @@ mode "resize" {
 bar {
     position top
 
-    status_command i3status 
+    status_command i3status
 
     colors {
         statusline #ffffff
