@@ -1,4 +1,5 @@
-#!/bin/sh
+#!/usr/bin/env sh
+
 export MOZ_ENABLE_WAYLAND=1
 export QT_QPA_PLATFORM="wayland;xcb"
 export QT_QPA_PLATFORMTHEME=qt5ct
