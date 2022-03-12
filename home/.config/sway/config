@@ -3,7 +3,7 @@ set $term alacritty
 
 output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 
-exec wl-paste -t text --watch clipman store --no-persist
+exec wl-paste -p -t text --watch clipman store -P --histpath="~/.local/share/clipman-primary.json"
 
 set $menu "rofi -combi-modi window,drun,ssh,run -show combi -show-icons"
 # set $menu dmenu_path | dmenu | xargs swaymsg exec --
