@@ -88,7 +88,7 @@ mode "resize" {
     bindsym Escape mode "default"
 }
 
-bar status_command waybar
+bar swaybar_command waybar
 
 input "type:keyboard" {
     xkb_layout "us,ru"
