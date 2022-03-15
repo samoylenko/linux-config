@@ -88,17 +88,7 @@ mode "resize" {
     bindsym Escape mode "default"
 }
 
-bar {
-    position top
-
-    status_command i3status
-
-    colors {
-        statusline #ffffff
-        background #323232
-        inactive_workspace #32323200 #32323200 #5c5c5c
-    }
-}
+bar status_command waybar
 
 input "type:keyboard" {
     xkb_layout "us,ru"
